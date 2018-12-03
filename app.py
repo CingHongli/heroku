@@ -220,7 +220,7 @@ flexBubbleContainerJsonString_INTRO ="""
           "contents": [
             {
               "type": "image",
-              "url": "https://i.imgur.com/YldsN6j.jpg",
+              "url": "https://i.imgur.com/PaRqSKL.jpg",
               "flex": 0,
               "align": "center",
               "gravity": "top",
