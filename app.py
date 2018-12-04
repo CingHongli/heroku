@@ -1,7 +1,8 @@
 
 # coding: utf-8
 
-# In[2]:
+# In[ ]:
+
 
 # In[1]:
 
@@ -295,7 +296,7 @@ flexBubbleContainerJsonString_INTRO ="""
 #宣告並設定推播的 flex bubble (全域變數)
 #圖片的URL要置換成絕對路徑
 #URI要改成想連結的URI
-flexBubbleContainerJsonString_WORK = """
+flexBubbleContainerJsonString_WORK ="""
 {
     "type": "bubble",
     "hero": {
@@ -325,7 +326,7 @@ flexBubbleContainerJsonString_WORK = """
           "contents": [
             {
               "type": "text",
-              "text": "我的實作清單與專題",
+              "text": "我的實作清單",
               "flex": 0,
               "size": "sm",
               "weight": "bold",
@@ -352,7 +353,7 @@ flexBubbleContainerJsonString_WORK = """
           "type": "button",
           "action": {
             "type": "uri",
-            "label": "資安專題簡報",
+            "label": "資安簡報",
             "uri": "https://drive.google.com/file/d/14WGqM6MJcaPtsUvBJEvoyhP1mgT8YJyv/view"
           }
         },
