@@ -346,6 +346,7 @@ flexBubbleContainerJsonString_WORK ="""
           "action": {
             "type": "postback",
             "label": "VMware 實作及影片",
+			"text": "VMware",
             "data": "VMware"
           }
         },
