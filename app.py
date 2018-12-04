@@ -639,7 +639,7 @@ def handle_post_message(event):
     elif (data['type']==['Work']):
             line_bot_api.reply_message(
                 event.reply_token,
-                flexBubbleContainerJsonString_WORK
+                flexBubbleSendMessage_WORK
             )
     elif (data['type']==['skills']):
             line_bot_api.reply_message(
