@@ -3,7 +3,6 @@
 
 # In[2]:
 
-
 # In[1]:
 
 
@@ -149,11 +148,11 @@ button_template_message = CarouselTemplate(
                     actions=[
                         PostbackTemplateAction(
                             label='李慶鴻-個人資料',
-                            data="type=Introduction"
+                            data="type=resume"
                         ),
                         PostbackTemplateAction(
                             label='李慶鴻-學習經歷',
-                            data="type=Work"
+                            data="type=work"
                         )                     
                     ]
                 ),
@@ -296,135 +295,41 @@ flexBubbleContainerJsonString_INTRO ="""
 #宣告並設定推播的 flex bubble (全域變數)
 #圖片的URL要置換成絕對路徑
 #URI要改成想連結的URI
-flexBubbleContainerJsonString_WORK ="""
+flexBubbleContainerJsonString_WORK = """
 {
     "type": "bubble",
-    "direction": "ltr",
-    "header": {
-      "type": "box",
-      "layout": "horizontal",
-      "contents": [
-        {
-          "type": "text",
-          "text": "yourName 工作經歷",
-          "size": "md",
-          "align": "center",
-          "gravity": "center",
-          "weight": "bold",
-          "color": "#000000"
-        }
-      ]
-    },
     "hero": {
       "type": "image",
-      "url": "https://i.imgur.com/yourPicture.jpg",
-      "align": "center",
-      "gravity": "center",
+      "url": "https://i.imgur.com/cwlVh5I.gif",
       "size": "full",
       "aspectRatio": "20:13",
       "aspectMode": "cover"
     },
     "body": {
       "type": "box",
-      "layout": "horizontal",
-      "spacing": "md",
+      "layout": "vertical",
+      "spacing": "sm",
       "contents": [
         {
-          "type": "box",
-          "layout": "vertical",
-          "flex": 1,
-          "contents": [
-            {
-              "type": "image",
-              "url": "https://i.imgur.com/yourPicture.jpg",
-              "gravity": "bottom",
-              "size": "sm",
-              "aspectRatio": "4:3",
-              "aspectMode": "cover"
-            },
-            {
-              "type": "image",
-              "url": "https://i.imgur.com/yourPicture.png",
-              "margin": "md",
-              "size": "sm",
-              "aspectRatio": "4:3",
-              "aspectMode": "cover"
-            }
-          ]
+          "type": "text",
+          "text": "歡迎使用李慶鴻履歷機器人 以下是我的實作連結",
+          "size": "md",
+          "weight": "bold",
+          "color": "#000000",
+          "wrap": true
         },
         {
           "type": "box",
-          "layout": "vertical",
-          "flex": 2,
+          "layout": "baseline",
+          "margin": "md",
           "contents": [
             {
               "type": "text",
-              "text": "yourName 學校經歷",
-              "flex": 1,
-              "size": "xs",
-              "align": "start",
-              "gravity": "center",
+              "text": "我的實作清單與專題",
+              "flex": 0,
+              "size": "sm",
               "weight": "bold",
-              "color" : "#99ccff",
-              "action": {
-                "type": "message",
-                "label": "mydata",
-                "text": "我想看yourName的學校經歷"
-              }
-            },
-            {
-              "type": "separator"
-            },
-            {
-              "type": "text",
-              "text": "yourName 職務經歷",
-              "flex": 1,
-              "size": "xs",
-              "align": "start",
-              "gravity": "center",
-              "weight": "bold",
-              "color" : "#99ccff",
-              "action": {
-                "type": "message",
-                "label": "myhobby",
-                "text": "我想看yourName的職務經歷"
-              }
-            },
-            {
-              "type": "separator"
-            },
-            {
-              "type": "text",
-              "text": "yourName 在資策會的學習狀況",
-              "flex": 1,
-              "size": "xs",
-              "align": "start",
-              "gravity": "center",
-              "weight": "bold",
-              "color" : "#99ccff",
-              "action": {
-                "type": "message",
-                "label": "mythought",
-                "text": "我想看yourName在資策會的學習狀況"
-              }
-            },
-            {
-              "type": "separator"
-            },
-            {
-              "type": "text",
-              "text": "yourName FB",
-              "flex": 1,
-              "size": "xs",
-              "align": "start",
-              "gravity": "center",
-              "weight": "bold",
-              "color" : "#99ccff",
-              "action": {
-                "type": "uri",
-                "label": "FB",
-                "uri": "https://www.facebook.com/fan.peter.90"
-              }
+              "wrap": true
             }
           ]
         }
@@ -432,25 +337,37 @@ flexBubbleContainerJsonString_WORK ="""
     },
     "footer": {
       "type": "box",
-      "layout": "horizontal",
+      "layout": "vertical",
+      "spacing": "sm",
       "contents": [
         {
           "type": "button",
           "action": {
+            "type": "postback",
+            "label": "VMware 實作及影片",
+            "data": "VMware"
+          }
+        },
+        {
+          "type": "button",
+          "action": {
             "type": "uri",
-            "label": "More",
-            "uri": "https://www.google.com"
-          },
-          "gravity": "center"
+            "label": "資安專題簡報",
+            "uri": "https://drive.google.com/file/d/14WGqM6MJcaPtsUvBJEvoyhP1mgT8YJyv/view"
+          }
+        },
+        {
+          "type": "button",
+          "action": {
+            "type": "uri",
+            "label": "Shell Script",
+            "uri": "https://drive.google.com/file/d/1ZOQTLGKlmIjt81bHRnHNActCPlOo97Df/view?usp=sharing"
+          }
         }
       ]
-    },
-    "styles": {
-      "hero": {
-        "backgroundColor": "#160D3A"
-      }
     }
-  }"""
+  }
+"""
 
 
 # In[ ]:
@@ -721,7 +638,7 @@ def handle_post_message(event):
     elif (data['type']==['Work']):
             line_bot_api.reply_message(
                 event.reply_token,
-                flexBubbleSendMessage_WORK
+                flexBubbleContainerJsonString_WORK
             )
     elif (data['type']==['skills']):
             line_bot_api.reply_message(
@@ -753,14 +670,16 @@ def handle_message(event):
     # 當用戶輸入VMware時判斷成立
     if (event.message.text.find('VMware')!= -1):
         # 提供VMware作業網址
-        url1='https://www.youtube.com/watch?v=6IZjfuUXrzg'
-        url2='https://www.youtube.com/watch?v=JEc_hzKs22g'
-        url3='https://app.box.com/s/2bt2aqtyjhfjvr8k09y13vuoqhog6olx'
+        url1='https://youtu.be/9JacbJAj5sQ'
+        url2='https://app.box.com/file/340243576586'
+        url3='https://youtu.be/FjkpmixPrxU'
+        url4='https://app.box.com/file/340228240169'
         # 將上面的變數包裝起來
         reply_list = [
-            TextSendMessage(text="VMware作業講解:\n%s" % (url1)),
-            TextSendMessage(text="VMware作業實作:\n%s" % (url2)),
-            TextSendMessage(text="VMware作業簡報:\n%s" % (url3))
+            TextSendMessage(text="VMware實作講解:\n%s" % (url1)),
+            TextSendMessage(text="VMware實作簡報:\n%s" % (url2)),
+            TextSendMessage(text="VMware實作操作:\n%s" % (url3)),
+            TextSendMessage(text="VMware實作簡報:\n%s" % (url4))
         ]
         # 回覆訊息
         line_bot_api.reply_message(
@@ -858,7 +777,7 @@ def handle_message(event):
     執行此句，啟動Server，觀察後，按左上方塊，停用Server
 
 '''
-import os
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port=os.environ['PORT'])
 
