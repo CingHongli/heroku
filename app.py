@@ -245,7 +245,7 @@ flexBubbleContainerJsonString_INTRO ="""
               "weight": "bold",
               "action": {
                 "type": "uri",
-                "uri": "https://drive.google.com/file/d/0B7Ea_yMwLkGORUJ2Sm44ZkhVSUk/view?usp=sharing"
+                "uri": "https://www.cakeresume.com/s--Ia5Jk84fwiw7T8TjL0c-ng--/a2721357"
               }
             },
             {
