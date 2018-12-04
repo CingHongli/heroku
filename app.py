@@ -153,7 +153,7 @@ button_template_message = CarouselTemplate(
                         ),
                         PostbackTemplateAction(
                             label='李慶鴻-學習經歷',
-                            data="type=Work"
+                            data="type="Work"
                         )                     
                     ]
                 ),
