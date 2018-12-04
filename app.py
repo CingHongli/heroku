@@ -149,11 +149,11 @@ button_template_message = CarouselTemplate(
                     actions=[
                         PostbackTemplateAction(
                             label='李慶鴻-個人資料',
-                            data="type="Introduction"
+                            data="type=Introduction"
                         ),
                         PostbackTemplateAction(
                             label='李慶鴻-學習經歷',
-                            data="type="Work"
+                            data="type=Work"
                         )                     
                     ]
                 ),
