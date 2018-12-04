@@ -170,7 +170,7 @@ button_template_message = CarouselTemplate(
                         URITemplateAction(
                             label='Dropboxpaper',
                             #改成你的作業連結
-                            uri="https://paper.dropbox.com/folder/show/12_-e.1gg8YzoPEhbTkrhvQwJ2zz3XHPtTjQXLJApXRmDb4mHQ1PTbO0bx" 
+                            uri="https://paper.dropbox.com/doc/2018-11-16-Devops--ATO4scOHD47aP1R5ErOF3ppKAg-cOV2fLyXwjezlhnNtz78Q"
                         )
                     ]
                 ),
@@ -722,7 +722,7 @@ def handle_message(event):
         # 回覆訊息
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text="打籃球、聽音樂、觀看世界與科技新聞")
+            TextSendMessage(text="我的興趣是跑步及打籃球，高中曾參加系隊，其實運動幫助我很大，可以讓我頭腦清晰以及身體保持在最佳狀態，迎戰各式各樣的挑戰。另外，也經常看一些科技報導及文茜的世界周報，了解全球各地的時事及趨勢。")
             )
     
     # 結合旋轉門選單中的"yourName自我介紹"，進到flexbubble選單，按下"yourName 能為公司做的貢獻"，會有文字"我想看yourName的想法"的輸入，當符合字串時判斷成立
