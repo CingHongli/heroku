@@ -301,7 +301,7 @@ flexBubbleContainerJsonString_WORK ="""
     "type": "bubble",
     "hero": {
       "type": "image",
-      "url": "https://i.imgur.com/cwlVh5I.gif",
+      "url": "https://ppt.cc/fSab8x@.gif",
       "size": "full",
       "aspectRatio": "20:13",
       "aspectMode": "cover"
