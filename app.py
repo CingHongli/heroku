@@ -159,7 +159,7 @@ button_template_message = CarouselTemplate(
                 ),
                 CarouselColumn(
                     #置換成自己要用的照片
-                    thumbnail_image_url="https://%s/images/cc103.jpg" %server_url,
+                    thumbnail_image_url="https://%s/images/cc103-1.gif" %server_url,
                     title='歡迎使用李慶鴻履歷機器人\n請使用下方功能選單\n或是按下方按鈕',
                     text='李慶鴻 實作專題與調研',
                     actions=[
@@ -301,7 +301,7 @@ flexBubbleContainerJsonString_WORK ="""
     "type": "bubble",
     "hero": {
       "type": "image",
-      "url": "https://ppt.cc/fSab8x@.gif",
+      "url": "https://i.imgur.com/m1Hp1PI.jpg",
       "size": "full",
       "aspectRatio": "20:13",
       "aspectMode": "cover"
