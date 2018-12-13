@@ -760,7 +760,6 @@ def handle_message(event):
             TextSendMessage(text="你要放的其他專長的文字")
             )
    
-
     elif (event.message.text.find('more')!= -1):
         line_bot_api.reply_message(
             event.reply_token,
@@ -771,7 +770,7 @@ def handle_message(event):
         )          
     # 收到不認識的訊息時，回覆原本的旋轉門菜單    
     else:         
-		pass
+	     pass
 
 # In[ ]:
 
